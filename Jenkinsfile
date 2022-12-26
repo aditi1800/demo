@@ -26,7 +26,7 @@ pipeline {
         sh "sed -i 's+image-registry.openshift-image-registry.svc:5000/aditi-poc/node-app2.*+image-registry.openshift-image-registry.svc:5000/aditi-poc/node-app2:${DOCKERTAG}+g' ./dev/deployment.yaml"
         sh "cat ./dev/deployment.yaml"
         sh "git add ."
-        sh "git commit -m 'done by jenkins job updatemanifest' "
+        sh "git commit -m 'done by jenkins job node-app-update-deployment-pipeline' "
 //      sh "git remote set-url https://$user:$pass@github.com/$user/argocd-app-config.git"
         sh  'git push https://$user:$encodedPass@github.com/$user/demo.git HEAD:main'
             }
