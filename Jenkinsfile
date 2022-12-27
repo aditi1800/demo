@@ -28,7 +28,7 @@ pipeline {
         sh "git add ."
         sh "git commit -m 'done by jenkins job node-app-update-deployment-pipeline' "
 //      sh "git remote set-url https://$user:$pass@github.com/$user/argocd-app-config.git"
-        sh  'git push https://$user:$encodedPass@github.com/$user/demo.git HEAD:main'
+        sh  'git push https://$user:$encodedPass@github.com/$user/demo.git HEAD:demo-branch'
             }
         }
         }
