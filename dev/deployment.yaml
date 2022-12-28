@@ -21,7 +21,7 @@ spec:
       containers:
         - name: node-app
           image: >-
-            image-registry.openshift-image-registry.svc:5000/aditi-poc/node-app2:7
+            image-registry.openshift-image-registry.svc:5000/aditi-poc/node-app2:8
           ports:
             - containerPort: 8080
               protocol: TCP
